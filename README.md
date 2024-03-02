@@ -2,8 +2,7 @@
 
 ### Usage
 
-    dotfiles on  main via 💎 v3.3.0
-    ❯ make
+    $ make
     Help:
     make run                 Default installation
     make install             Install all dotfiles
