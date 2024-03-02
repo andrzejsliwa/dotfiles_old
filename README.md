@@ -1,6 +1,6 @@
 # Dotfiles symlinked on my machine
 
-### Usage
+## Usage
 
     $ make
     Help:
