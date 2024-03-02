@@ -1,0 +1,4 @@
+export TERM="screen-256color"
+
+eval "$(starship init bash)"
+eval "$(zoxide init bash)"
