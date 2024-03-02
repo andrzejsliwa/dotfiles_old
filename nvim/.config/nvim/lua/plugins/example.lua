@@ -1,6 +1,6 @@
 -- since this is just an example spec, don't actually load anything here and return an empty spec
 -- stylua: ignore
--- if true then return {} end
+if true then return {} end
 
 -- every spec file under the "plugins" directory will be loaded automatically by lazy.nvim
 --
@@ -11,27 +11,39 @@
 return {
   -- add gruvbox
   { "ellisonleao/gruvbox.nvim" },
-  { "catppuccin/nvim", 
-    name = "catppuccin", 
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
     opts = {
       flavour = "mocha",
-      transparent_background = true
+      transparent_background = true,
     },
-    priority = 1000 },
+    priority = 1000,
+  },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
   },
 
   {
     "nvim-neo-tree/neo-tree.nvim",
     opts = {
       window = {
-         position = "right",
+        width = 28,
+      },
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          -- hide_dotfiles = false,
+          -- hide_hidden = false,
+          -- hide_gitignored = false,
+        },
+        follow_current_file = {
+          enabled = true, -- This will find and focus the file in the active buffer every time
+          --               -- the current file is changed while the tree is open.
+          leave_dirs_open = false, -- `false` closes auto expanded dirs, such as with `:Neotree reveal`
+        },
       },
     },
   },
