@@ -21,6 +21,7 @@ symbol = '☸ '
 disabled = false
 detect_files = ['Dockerfile']
 format = '[$context(\[$namespace\])]($style) '
+
 [kubernetes.context_aliases]
 'arn:aws:eks:us-west-2:577926974532:cluster/gal-kub-demo-cluster' = 'gal'
 

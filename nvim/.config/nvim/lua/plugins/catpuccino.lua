@@ -1,5 +1,7 @@
 return {
   {
+    { "xiyaowong/transparent.nvim" },
+    
     {
       "catppuccin/nvim",
       name = "catppuccin",
