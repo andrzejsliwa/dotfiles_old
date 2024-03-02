@@ -1,15 +1,12 @@
 # Dotfiles symlinked on my machine
 
-### Install with stow:
-```bash
-stow --target ~/.config .
-```
+### Usage
 
-### Homebrew installation:
-```bash
-# Leaving a machine
-brew leaves > leaves.txt
-
-# Fresh installation
-xargs brew install < leaves.txt
-```
+    dotfiles on  main via 💎 v3.3.0
+    ❯ make
+    Help:
+    make run                 Default installation
+    make install             Install all dotfiles
+    make uninstall           Uninstall all dotfiles
+    make install_brews       Install all brews
+    make save_brews          Save all brews
