@@ -18,4 +18,12 @@ if vim.fn.has("wsl") == 1 then
   }
 end
 
-vim.opt.relativenumber = false
+vim.o.relativenumber = false
+vim.o.hlsearch = true
+vim.o.undofile = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
+vim.o.updatetime = 250
+vim.wo.signcolumn = "yes"
+vim.o.clipboard = "unnamedplus"
+vim.o.completeopt = "menuone,noselect"
