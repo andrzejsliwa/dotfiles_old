@@ -2,3 +2,17 @@ export TERM="screen-256color"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+
+alias ls='lsd'
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+alias tree='lt'
+alias cd="z"
+
+if command -v bat > /dev/null; then
+  alias cat="bat"
+elif command -v batcat > /dev/null; then
+  alias cat="batcat"
+fi
